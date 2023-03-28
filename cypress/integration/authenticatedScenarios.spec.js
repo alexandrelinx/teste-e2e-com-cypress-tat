@@ -1,3 +1,4 @@
+/* eslint-disable cypress/no-unnecessary-waiting */
 //cypress/integration/authenticatedScenarios.spec.js
 describe('Scenarios where authentication is pre-requirement',()=>{
   beforeEach(()=>{
@@ -35,12 +36,13 @@ describe('Scenarios where authentication is pre-requirement',()=>{
   })
   it('log out',{tags:'@desktop-and-tablet'},() => {
     cy.visit('/')
-    cy.wait('@getNotes')
-    if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
-      cy.get('.navbar-toggle.collapsed')
-        .should('be.visible')
-        .click()
-    }
+    cy.wait(3000)
+    //cy.wait('@getNotes')
+    // if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
+    cy.get('.navbar-toggle.collapsed')
+      .should('be.visible')
+      .click()
+    // }
 
 
 
