@@ -36,16 +36,13 @@ describe('Scenarios where authentication is pre-requirement',()=>{
   })
   it('log out',{tags:'@desktop-and-tablet'},() => {
     cy.visit('/')
-   // cy.wait(2000)
+    // cy.wait(2000)
     cy.wait('@getNotes')
     // if (Cypress.config('viewportWidth') < Cypress.env('viewportWidthBreakpoint')) {
-   // cy.get('.navbar-toggle.collapsed')
-     // .should('be.visible')
-     // .click()
+    // cy.get('.navbar-toggle.collapsed')
+    // .should('be.visible')
+    // .click()
     // }
-
-
-
 
     /* ==== Generated with Cypress Studio ==== */
     cy.get('.nav > :nth-child(2) > a').click()
