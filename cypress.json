@@ -3,7 +3,8 @@
     "baseUrl":"https://notes-serverless-app.com",
     "defaultCommandTimeout":10000,
     "env": {
-        "viewportWidthBreakpoint": 768
+        "viewportWidthBreakpoint": 768,
+        "theme": "halloween"
       },
     "experimentalSessionSupport":true,
     "chromeWebSecurity":false,

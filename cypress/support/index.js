@@ -14,10 +14,13 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+import 'cypress-dark'
 import 'cypress-iframe'
 import 'cypress-file-upload'
 import 'cypress-mailosaur'
 import './commands'
-require('cypress-grep')()
+require('cypress-grep')(),
+//require("cypress-dark"),
+require('cypress-dark/src/halloween')
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
